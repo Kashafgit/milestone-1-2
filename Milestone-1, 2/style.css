@@ -1,0 +1,235 @@
+/* Default (Desktop Layout) */
+body {
+    margin: 0;
+    padding: 150px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.resume-container {
+    background-color: white;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 20px 10px 10px;
+    box-shadow: 0 0 15px yellow;
+    margin-bottom: 30px;
+}
+
+.left {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid yellow;
+}
+
+#objective {
+    padding-top: 10px;
+}
+
+#certification {
+    padding-top: 15px;
+}
+
+.rigth {
+    width: 65%;
+    padding: 20px;
+}
+
+h3 {
+    padding: 2%;
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px yellow;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+button {
+    border-radius: 10%;
+    box-shadow: 0 0 15px rgb(55, 53, 53);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+/* Responsive for tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .resume-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        padding: 15px;
+    }
+
+    .rigth {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Responsive for small screens (phones) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        padding: 10px;
+    }
+
+    .rigth {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+/* Responsive for very small devices (phones with max-width 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #profile {
+        width: 80px;
+        height: 80px;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        padding: 8px;
+    }
+
+    .rigth {
+        width: 100%;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 10px;
+    }
+}
+
+/* Responsive for very small screens (max-width 390px) */
+@media screen and (max-width: 390px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #profile {
+        width: 60px;
+        height: 60px;
+    }
+
+    .left, .rigth {
+        width: 100%;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 9px;
+    }
+}
